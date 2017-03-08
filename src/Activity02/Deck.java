@@ -29,15 +29,22 @@ public class Deck {
 	 * @param suits is an array containing all of the card suits.
 	 * @param values is an array containing all of the card point values.
 	 */
+        @SuppressWarnings("empty-statement")
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-	}
+	for (int i == 0; i < Deck.length ; i++){
+            new Card = card(ranks[i], suits[i], values[1]);
+        }
 
 
 	/**
 	 * Determines if this deck is empty (no undealt cards).
 	 * @return true if this deck is empty, false otherwise.
 	 */
+        if (Deck.length == 0){
+        return true
+        }
+}
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
