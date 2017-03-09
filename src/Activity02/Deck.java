@@ -32,8 +32,9 @@ public class Deck {
         @SuppressWarnings("empty-statement")
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-	for (int i == 0; i < Deck.length ; i++){
-            new Card = card(ranks[i], suits[i], values[1]);
+	for (int i = 0; i < Deck.length ; i++){
+            Card c = new Card(ranks[i], suits[i], values[i]);
+        }
         }
 
 
@@ -41,13 +42,17 @@ public class Deck {
 	 * Determines if this deck is empty (no undealt cards).
 	 * @return true if this deck is empty, false otherwise.
 	 */
-        if (Deck.length == 0){
-        return true
-        }
-}
+        
+        
+
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-	}
+            if (Deck.length == 0){
+                return true;}
+            else{
+                return false;
+            }
+        }
 
 	/**
 	 * Accesses the number of undealt cards in this deck.
@@ -55,6 +60,7 @@ public class Deck {
 	 */
 	public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+            return size;
 	}
 
 	/**
@@ -63,6 +69,7 @@ public class Deck {
 	 */
 	public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+            
 	}
 
 	/**
@@ -72,6 +79,8 @@ public class Deck {
 	 */
 	public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+            size--;
+            return Deck.size;
 	}
 
 	/**
